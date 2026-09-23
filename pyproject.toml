@@ -10,11 +10,18 @@ requires-python = ">=3.12"
 dependencies = [
     "faker>=40.39.0",
     "pytest>=9.1.1",
+    "python-dotenv>=1.2.3",
     "selenium>=4.49.0",
 ]
 
 [project.scripts]
 selenium1 = "selenium1:main"
+
+[tool.pytest.ini_options]
+markers = [
+    "login_guest: tests of login from main page",
+    "login: tests of login from product page",
+]
 
 [build-system]
 requires = ["uv_build>=0.12.3,<0.13.0"]
