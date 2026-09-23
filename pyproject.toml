@@ -21,6 +21,7 @@ selenium1 = "selenium1:main"
 markers = [
     "login_guest: tests of login from main page",
     "login: tests of login from product page",
+    "need_review: final project tests for peer review",
 ]
 
 [build-system]
